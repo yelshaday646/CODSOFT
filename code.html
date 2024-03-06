@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="CODSOFT/script.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1>Z<em>o</em>zi</h1>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#achievement">Achievements</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h2>Hi all i'm <strong>zeelshaday</strong> kibru</h2>
+        </div>
+      </div>
+    </div>
+    <!-- about me Section -->
+    <div id="about">
+      <div class="container">
+        <div class="selfIntrodaction">
+          <div class="profilePic">
+            <img src="img/background.jpg" />
+          </div>
+          <div class="introText">
+            <h1 class="introduction">About Me</h1>
+            <p>
+              As an aspiring IT professional, I bring a solid foundation in IT
+              and cloud support, such as network administration, system support,
+              or programming. Eager to contribute my technical skills and
+              passion for problem-solving in a dynamic IT environment.Adept at
+              quickly learning and applying new technologies, with hands-on
+              experience in Microsoft tools, python, and web development tools.
+              Demonstrated ability to collaborate effectively with team members
+              and adapt to evolving priorities. Proactive in identifying and
+              resolving technical issues, ensuring the smooth operation of IT
+              systems. Committed to continuous learning and professional
+              development to stay current in the fast-paced IT industry.
+              Enthusiastic about contributing to innovative projects and gaining
+              valuable experience in the field.
+            </p>
+            <div class="moreInfo">
+              <p
+                class="infoLink active-link"
+                onclick="displayContent('Education')"
+              >
+                Education
+              </p>
+              <p class="infoLink" onclick="displayContent('Work experience')">
+                Work experience
+              </p>
+              <p class="infoLink" onclick="displayContent('Skills')">Skills</p>
+            </div>
+            <div class="infoContents activeContents" id="Education">
+              <ul>
+                <li>
+                  <span>Front-end web development</span><br />develop graphical
+                  user interface of a website through the use of HTML, CSS, and
+                  JavaScript.
+                </li>
+                <li>
+                  <span>content creator</span><br />use writing, graphic design,
+                  visual storytelling, or a combination of these disciplines to
+                  make any topic relatable and interesting.
+                </li>
+                <li>
+                  <span>cloud consultant</span><br />build, operate, manage and
+                  maintain an optimal cloud environment1
+                </li>
+              </ul>
+            </div>
+            <div class="infoContents" id="Work experience">
+              <ul>
+                <li>
+                  <span>Front-end web development</span><br />develop graphical
+                  user interface of a website through the use of HTML, CSS, and
+                  JavaScript.
+                </li>
+                <li>
+                  <span>content creator</span><br />use writing, graphic design,
+                  visual storytelling, or a combination of these disciplines to
+                  make any topic relatable and interesting.
+                </li>
+                <li>
+                  <span>cloud consultant</span><br />build, operate, manage and
+                  maintain an optimal cloud environment1
+                </li>
+              </ul>
+            </div>
+            <div class="infoContents" id="Skills">
+              <ul>
+                <li>
+                  <span>Front-end web development</span><br />develop graphical
+                  user interface of a website through the use of HTML, CSS, and
+                  JavaScript.
+                </li>
+                <li>
+                  <span>content creator</span><br />use writing, graphic design,
+                  visual storytelling, or a combination of these disciplines to
+                  make any topic relatable and interesting.
+                </li>
+                <li>
+                  <span>cloud consultant</span><br />build, operate, manage and
+                  maintain an optimal cloud environment1
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var links = document.getElementsByClassName("infoLink");
+      var contents = document.getElementsByClassName("infoContents");
+      function displayContent(display) {
+        for (link of links) {
+          link.classList.remove("active-link");
+        }
+        for (content of contents) {
+          content.classList.remove("activeContents");
+        }
+      }
+    </script>
+  </body>
+</html>
