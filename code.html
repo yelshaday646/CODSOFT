@@ -65,37 +65,33 @@
             <div class="infoContents activeContents" id="Education">
               <ul>
                 <li>
-                  <span>Front-end web development</span><br />develop graphical
-                  user interface of a website through the use of HTML, CSS, and
-                  JavaScript.
+                  <span>Computer scince and engineering</span><br />
+                  At Adama Scince and Technology University (ASTU),2018-2022
                 </li>
                 <li>
-                  <span>content creator</span><br />use writing, graphic design,
-                  visual storytelling, or a combination of these disciplines to
-                  make any topic relatable and interesting.
+                  <span>Front-end web development</span><br />At SheCodes, 2024
                 </li>
                 <li>
-                  <span>cloud consultant</span><br />build, operate, manage and
-                  maintain an optimal cloud environment1
+                  <span>Graphic Design</span><br />At Adama Scince and
+                  Technology University (ASTU),2023
+                </li>
+                <li>
+                  <span>Cloud consulting</span><br />Nedamco Africa, AWS & Azure
+                  Cloud Practitioner Certification,2024
                 </li>
               </ul>
             </div>
             <div class="infoContents" id="Work experience">
               <ul>
                 <li>
-                  <span>Front-end web development</span><br />develop graphical
-                  user interface of a website through the use of HTML, CSS, and
-                  JavaScript.
+                  <span>Nedamco Africa</span><br />
+                  cloud consultant
                 </li>
                 <li>
-                  <span>content creator</span><br />use writing, graphic design,
-                  visual storytelling, or a combination of these disciplines to
-                  make any topic relatable and interesting.
+                  <span>Ameha Wehib Import and Technology</span><br />content
+                  creator
                 </li>
-                <li>
-                  <span>cloud consultant</span><br />build, operate, manage and
-                  maintain an optimal cloud environment1
-                </li>
+                <li><span>IntraCom ICT Solutions </span><br />It specialist</li>
               </ul>
             </div>
             <div class="infoContents" id="Skills">
@@ -120,6 +116,38 @@
         </div>
       </div>
     </div>
+    <!-- Achivemente -->
+    <div id="achievements">
+      <div class="container">
+        <h1 class="title">Achievements</h1>
+        <div class="certificates">
+          <div>
+            <h2>Web design</h2>
+            <img src="img/SheCodes-cf.png" alt="" />
+          </div>
+          <div>
+            <h2>from amazon</h2>
+            <img src="img/aws.JPG" alt="" />
+          </div>
+          <div>
+            <h2>from Azure</h2>
+            <img src="img/azur.JPG" alt="" />
+          </div>
+          <div>
+            <h2>Graphic Design</h2>
+            <img src="img/Scanግራፊክስ (2)_page-0002.jpg" alt="" />
+          </div>
+          <div>
+            <h2>others</h2>
+            <img
+              src="img/ASE_Online_English_Certificate_Zeelshaday_Kibru (2)_page-0001.jpg"
+              alt=""
+            />
+            <img src="img/Certificate_7349_20_sv4ga_page-0001.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       var links = document.getElementsByClassName("infoLink");
       var contents = document.getElementsByClassName("infoContents");
@@ -130,6 +158,8 @@
         for (content of contents) {
           content.classList.remove("activeContents");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(display).classList.add("activeContents");
       }
     </script>
   </body>
