@@ -30,7 +30,7 @@ h1 {
   color: #f26b5c;
 }
 h1 em {
-  color: aliceblue;
+  color: #f26b5c;
 }
 strong {
   color: #f26b5c;
@@ -130,12 +130,34 @@ nav ul li a:hover::after {
   display: block;
 }
 /*-------about me--------*/
-#achievements {
-  padding: 30px 0;
-}
-.certificates {
+
+.certificates-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+}
+
+.certificates-list div :hover {
+  display: flex;
+  transform: translateY(-10px);
+}
+#achievements {
+  padding: 30px 0;
+}
+.certificates {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.certificates img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.container h1 {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
 }
