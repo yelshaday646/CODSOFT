@@ -142,7 +142,13 @@ nav ul li a:hover::after {
 }
 /*-------Achievements--------*/
 #achievements {
-  padding: 30px 0;
+  padding: 20px 0;
+}
+.Achievementsh2 {
+  color: antiquewhite;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
 }
 .AchievementsBox {
   display: grid;
@@ -181,8 +187,11 @@ nav ul li a:hover::after {
   transition: height 0.5s ease;
 }
 .text .heading {
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
+}
+.text p {
+  font-weight: 400;
 }
 .certificate:hover img {
   transform: scale(1.1);
@@ -190,47 +199,101 @@ nav ul li a:hover::after {
 .certificate:hover .text {
   height: 100%;
 }
+.button {
+  display: block;
+  margin: 50px auto;
+  color: white;
+  width: fit-content;
+  border: 1px solid #f26b5c;
+  line-height: 38px;
+  padding: 14px 50px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.5s;
+}
+.button:hover {
+  background: #f26b5c;
+}
 /*-------project--------*/
+#project {
+  padding: 50px 0;
+}
 .project h1 {
   margin-bottom: 64px;
   color: antiquewhite;
   text-align: center;
-  font-size: 60px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 500;
+}
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4rem;
+  margin-top: 5rem;
+}
+.projectBox {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.projectBox img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.5s;
+}
+.projectLayer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), #f26b5c);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+  transition: height 0.5s ease;
 }
 .projectBox:hover img {
   transform: scale(1.1);
 }
-.projectBox {
+.projectBox:hover .projectLayer {
+  height: 100%;
+}
+.projectLayer h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.projectLayer p {
+  font-size: 15px;
+}
+/*-------contact--------*/
+
+.contactBar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
 }
-.projectBox img {
-  height: 300px;
-  width: 500px;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
+.contact-info {
+  flex-basis: 35%;
 }
-.projectBox .projectLayer {
-  height: 300px;
-  width: 500px;
-  background: linear-gradient(rgb (0, 0, 0, 0.6), #f26b5c);
-  border-radius: 10px;
+.picture {
+  flex-basis: 40%;
 }
-.contact {
-  display: block;
-  text-align: center;
-  justify-content: center;
+.picture img {
+  max-width: 80%;
+  border-radius: 30px;
 }
 .contact h2 {
   margin-top: 30px;
   color: antiquewhite;
-  text-align: center;
+
   font-size: 60px;
   font-weight: 600;
 }
@@ -240,7 +303,10 @@ nav ul li a:hover::after {
 .contact p i {
   color: #f26b5c;
   font-size: 25px;
-  margin-right: 25px;
+  margin-right: 15px;
+}
+.socialMedia {
+  margin-top: 30px;
 }
 .socialMedia a {
   text-decoration: none;
@@ -256,7 +322,7 @@ nav ul li a:hover::after {
 }
 .button {
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 14px 50px;
   margin: 20px auto;
   border: 1px solid #f26b5c;
   border-radius: 6px;
@@ -265,11 +331,4 @@ nav ul li a:hover::after {
 }
 .button:hover {
   background: #f26b5c;
-}
-.Achievementsh2 {
-  margin-bottom: 64px;
-  color: antiquewhite;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 500;
 }
