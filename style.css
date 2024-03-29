@@ -289,11 +289,15 @@ nav ul li a:hover::after {
 .picture img {
   max-width: 80%;
   border-radius: 30px;
+  padding: 15px;
+  margin: 15px 0;
+}
+.contact h1 {
+  text-align: center;
 }
 .contact h2 {
   margin-top: 30px;
   color: antiquewhite;
-
   font-size: 60px;
   font-weight: 600;
 }
@@ -331,4 +335,63 @@ nav ul li a:hover::after {
 }
 .button:hover {
   background: #f26b5c;
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #485d26;
+  font-weight: 300;
+  margin-top: 20px;
+}
+/*-------compatebility--------*/
+nav .fa {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(img/new1.jpg);
+  }
+  #header p {
+    color: #f26b5c;
+  }
+  .header-text {
+    margin-top: 100% !important;
+    font-size: 16px;
+  }
+  .header-text h2 {
+    font-size: 30px;
+  }
+  nav .fa {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #f26b5c;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    z-index: 2;
+    transition: all 0.7s ease;
+    padding-top: 50px;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #about h1 {
+    font-size: 40px;
+  }
+  .profilePic,
+  .introText {
+    flex-basis: 100%;
+  }
 }

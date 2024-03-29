@@ -24,13 +24,20 @@
       <div class="container">
         <nav>
           <h1>Z<em>o</em>zi</h1>
-          <ul>
+          <ul id="menuList">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#achievement">Achievements</a></li>
             <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+
+            <i
+              class="fa fa-times-circle"
+              aria-hidden="true"
+              onclick="hideMenue()"
+            ></i>
           </ul>
+          <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
         </nav>
         <div class="header-text">
           <p>Web Developer</p>
@@ -242,6 +249,9 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <p>Copyright © <em>Zeelshaday.</em> made with Codesoft</p>
+    </footer>
     <script>
       var links = document.getElementsByClassName("infoLink");
       var contents = document.getElementsByClassName("infoContents");
@@ -254,6 +264,15 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(display).classList.add("activeContents");
+      }
+    </script>
+    <script>
+      var menuList = document.getElementById("menuList");
+      function showMenu() {
+        menuList.style.right = "0";
+      }
+      function hideMenue() {
+        menuList.style.right = "-200px";
       }
     </script>
   </body>
